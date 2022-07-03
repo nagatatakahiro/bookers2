@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+.svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+}
