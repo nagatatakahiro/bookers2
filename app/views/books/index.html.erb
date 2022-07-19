@@ -1,19 +1,20 @@
-<div class="container">
+<div class="container px-5 px-sm-0">
   <div class="row">
   <%= render 'books/error', model: @book %>
-  <div class="col-xs-3">
+  <div class="col-md-3">
   <%= render 'users/user', user: @user %>
-  <h2 class="mt-3">NEW BOOK</h2>
+  <h2 class="mt-3">New book</h2>
   <%= render 'book', book: @book %>
 
 </div>
 <div class="col-md-8 offset-md-1">
-      <table class="table book-index">
+      <table class="table table-hover table-inverse">
         <h2>Books</h2>
         <thead>
           <th></th>
           <th>Title</th>
           <th>Opinion</th>
+          <th colspan="3"></th>
         </thead>
         <tbody>
           <% @books.each do |book| %>
